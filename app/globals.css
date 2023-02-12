@@ -5,7 +5,7 @@
 ul.tech-list li::before {
   content: '➜';
   margin-right: 5px;
-  color: #84cc16;
+  color: #02f3a0;
   font-size: 12px;
   line-height: 12px;
 }

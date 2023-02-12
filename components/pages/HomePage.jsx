@@ -9,10 +9,8 @@ const HomePage = () => {
           <h1 className='text-5xl font-bold '>Pedro Sorrentino</h1>
           <p className={`text-md font-semibold ${FiraCode.className}`}>
             Crafting{' '}
-            <span className='bg-lime-500 text-white px-2'>
-              digital solutions
-            </span>{' '}
-            to bring ideas to life.
+            <span className='bg-[#02F3A0]  px-2'>digital solutions</span> to
+            bring ideas to life.
           </p>
         </div>
         <div>

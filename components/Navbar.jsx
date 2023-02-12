@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FadeIn } from './Animations'
 import { FiraCode } from './Fonts'
 
 import { Github, Linkedin, Twitter } from './Icons'
@@ -12,14 +11,14 @@ const Navbar = () => {
       icon: <Github />,
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com',
-      icon: <Twitter />,
-    },
-    {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/pedro-sorrentino',
       icon: <Linkedin />,
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/PedroSorrentin0',
+      icon: <Twitter />,
     },
   ]
 
@@ -38,7 +37,7 @@ const Navbar = () => {
       <nav className={FiraCode}>
         <ol className='flex items-center gap-5'>
           <li
-            className={`text-sm bg-indigo-600 px-2 py-1 text-white rounded-md hover:bg-lime-500 hover:text-black transition duration-300 ${FiraCode.className}`}
+            className={`text-sm bg-indigo-600 px-2 py-1 text-white rounded-md hover:bg-[#02F3A0] hover:text-black transition duration-300 ${FiraCode.className}`}
           >
             <Link href={'/blog'}>Blog</Link>
           </li>
