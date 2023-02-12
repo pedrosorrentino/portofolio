@@ -3,7 +3,7 @@ import AboutPage from '@/components/pages/AboutPage'
 import ExperiencePage from '@/components/pages/ExperiencePage'
 import WorkPage from '@/components/pages/WorkPage'
 import ContactPage from '@/components/pages/ContactPage'
-// import BlogPage from '@/components/pages/BlogPage'
+import { FadeInSection } from '@/components/Animations'
 
 export const metadata = {
   title: 'Full-Stack Developer Crafting Outstanding Digital Experiences',
@@ -29,15 +29,24 @@ export const metadata = {
   },
 }
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
-      <HomePage />
-      <AboutPage />
-      <ExperiencePage />
-      <WorkPage />
-      <ContactPage />
-      {/* <BlogPage /> */}
+      <FadeInSection delay={0}>
+        <HomePage />
+      </FadeInSection>
+      <FadeInSection delay={0.2}>
+        <AboutPage />
+      </FadeInSection>
+      <FadeInSection delay={0.4}>
+        <ExperiencePage />
+      </FadeInSection>
+      <FadeInSection delay={0.6}>
+        <WorkPage />
+      </FadeInSection>
+      <FadeInSection delay={0.8}>
+        <ContactPage />
+      </FadeInSection>
     </>
   )
 }

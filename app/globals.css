@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+ul.tech-list li::before {
+  content: '➜';
+  margin-right: 5px;
+  color: #84cc16;
+  font-size: 12px;
+  line-height: 12px;
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline;
 

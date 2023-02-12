@@ -1,7 +1,6 @@
 import { FiraCode } from '@/components/Fonts'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const CardTemplate = (props) => {
   const { title, publishedAt, summary, image } = props

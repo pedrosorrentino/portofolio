@@ -1,6 +1,6 @@
-// 'use-client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FadeIn } from './Animations'
 import { FiraCode } from './Fonts'
 
 import { Github, Linkedin, Twitter } from './Icons'
@@ -8,17 +8,17 @@ const Navbar = () => {
   const socialIcon = [
     {
       name: 'Github',
-      url: 'asdasdas',
+      url: 'https://github.com/pedrosorrentino',
       icon: <Github />,
     },
     {
       name: 'Twitter',
-      url: 'asdasdas',
+      url: 'https://twitter.com',
       icon: <Twitter />,
     },
     {
       name: 'Linkedin',
-      url: 'asdasdas',
+      url: 'https://www.linkedin.com/in/pedro-sorrentino',
       icon: <Linkedin />,
     },
   ]
@@ -27,13 +27,26 @@ const Navbar = () => {
     <header className='flex justify-between items-center mx-5'>
       <div>
         <Link href='/'>
-          <Image src={'/logo.png'} width={38} height={38} />
+          <Image
+            src={'/logo.png'}
+            width={40}
+            height={49}
+            alt='Pedro Sorrentino'
+          />
         </Link>
       </div>
       <nav className={FiraCode}>
-        <ol className='flex gap-5'>
+        <ol className='flex items-center gap-5'>
+          <li
+            className={`text-sm bg-indigo-600 px-2 py-1 text-white rounded-md hover:bg-lime-500 hover:text-black transition duration-300 ${FiraCode.className}`}
+          >
+            <Link href={'/blog'}>Blog</Link>
+          </li>
           {socialIcon.map((item) => (
-            <li key={item.name}>
+            <li
+              key={item.name}
+              className='hover:scale-110 transition duration-300 ease-in-out'
+            >
               <Link href={item.url}>{item.icon}</Link>
             </li>
           ))}
@@ -44,46 +57,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-// const Navbar = () => {
-//   const menuItems = [
-//     {
-//       before: '01',
-//       name: 'About',
-//       url: '/about',
-//     },
-//     {
-//       before: '02',
-//       name: 'Works',
-//       url: '/works',
-//     },
-//     {
-//       before: '03',
-//       name: 'Contact',
-//       url: '/contact',
-//     },
-//     // {
-//     //   before: '04',
-//     //   name: 'Blog',
-//     //   url: '/blog',
-//     // },
-//   ]
-
-//   return (
-//     <header className='flex justify-between mx-5'>
-//       <div>
-//         <Link href='/'>LOGO</Link>
-//       </div>
-//       <nav className={fira_code.className}>
-//         <ol className='flex gap-5'>
-//           {menuItems.map((item) => (
-//             <li key={item.name}>
-//               <span className='text-xs text-[#43e2bd]'>{item.before}. </span>
-//               <Link href={item.url}>{item.name}</Link>
-//             </li>
-//           ))}
-//         </ol>
-//       </nav>
-//     </header>
-//   )
-// }
