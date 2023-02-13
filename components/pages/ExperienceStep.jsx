@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { FiraCode } from '../Fonts'
-import { motion } from 'framer-motion'
 
 const ExperienceStep = () => {
   const [currentTab, setCurrentTab] = useState('1')
@@ -40,26 +39,6 @@ const ExperienceStep = () => {
     <div className='sm:flex gap-5 my-10'>
       <div className='flex mb-5 sm:flex-col justify-between'>
         {experience.map((tab, i) => (
-          // <motion.button
-          //   className={`text-slate-600 p-3 text-left font-semibold hover:bg-gray-200 focus:text-indigo-500 focus:bg-slate-100 active:text-indigo-500 active:bg-slate-100 transition duration-300 `}
-          //   key={i}
-          //   id={tab.id}
-          //   onClick={handleTabClick}
-          //   style={{
-          //     borderLeft:
-          //       currentTab === `${tab.id}`
-          //         ? '2px solid orange'
-          //         : '2px solid transparent',
-          //     transition: 'border-left 0.8s ease-in-out',
-          //   }}
-          //   transition={{
-          //     type: 'spring',
-          //     stiffness: 400,
-          //     damping: 30,
-          //   }}
-          // >
-          //   {tab.tabTitle}
-          // </motion.button>
           <button
             className={`text-slate-600 p-3 text-left font-semibold hover:bg-gray-200 focus:text-indigo-500 focus:bg-slate-100 active:text-indigo-500 active:bg-slate-100 transition duration-300 ${
               currentTab === `${tab.id}` ? 'border-l-2 border-indigo-500' : ''

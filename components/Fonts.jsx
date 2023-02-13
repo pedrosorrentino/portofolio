@@ -1,13 +1,13 @@
-import { Fira_Code, Roboto_Slab } from '@next/font/google'
+import { Fira_Code, Poppins } from '@next/font/google'
 
 export const FiraCode = Fira_Code({
   subsets: ['latin'],
-  variable: '--font-firacode',
+
   display: 'swap',
 })
 
-export const RobotoSlab = Roboto_Slab({
+export const PoppinsFont = Poppins({
   subsets: ['latin'],
-  variable: '--font-robotoslab',
+  weight: ['300', '400', '700'],
   display: 'swap',
 })

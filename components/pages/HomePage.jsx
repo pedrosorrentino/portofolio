@@ -9,7 +9,7 @@ const HomePage = () => {
           <h1 className='text-2xl sm:text-5xl font-bold '>Pedro Sorrentino</h1>
           <p className={`text-sm sm:text-xl  ${FiraCode.className}`}>
             Crafting{' '}
-            <span className='bg-[#02F3A0] px-2 rounded-md font-semibold'>
+            <span className='bg-[#02F3A0] px-2 rounded-md font-semibold text-indigo-700'>
               digital solutions
             </span>{' '}
             to bring ideas to life.
@@ -17,7 +17,7 @@ const HomePage = () => {
         </div>
         <div>
           <Image
-            className='rounded-full bg-black hover:scale-110 transition duration-300 ease-in-out'
+            className='rounded-full bg-black'
             src={'/images/Me.png'}
             width={200}
             height={200}

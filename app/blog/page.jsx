@@ -9,7 +9,7 @@ export const metadata = {
 
 export default async function BlogPage() {
   return (
-    <section>
+    <section className='mt-10'>
       <FadeIn>
         <h1 className='font-bold text-3xl'>Don't miss my latest articles</h1>
         <p className='leading-relaxed'>
@@ -18,7 +18,7 @@ export default async function BlogPage() {
           discussions, there's something for everyone.
         </p>
       </FadeIn>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 '>
         {allPosts
           .sort((a, b) => {
             if (new Date(a.publishedAt) > new Date(b.publishedAt)) {

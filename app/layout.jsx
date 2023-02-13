@@ -1,4 +1,4 @@
-import { RobotoSlab } from '@/components/Fonts'
+import { PoppinsFont } from '@/components/Fonts'
 import Navbar from '@/components/Navbar'
 import './globals.css'
 
@@ -33,7 +33,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={RobotoSlab.className}>
+    <html lang='en' className={PoppinsFont.className}>
       <body className='md:w-[700px] mx-auto  my-10 '>
         <Navbar />
         <main className='mt-10 mx-5 md:mx-0'>{children}</main>

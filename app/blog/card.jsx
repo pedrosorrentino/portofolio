@@ -6,7 +6,7 @@ const CardTemplate = (props) => {
   const { title, publishedAt, summary, image } = props
 
   return (
-    <article className='rounded-xl bg-white p-3 shadow-lg hover:shadow-xl'>
+    <article className='rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300'>
       <Link href={`blog/${props.slug}`}>
         <div className='relative flex items-end overflow-hidden rounded-xl'>
           <Image

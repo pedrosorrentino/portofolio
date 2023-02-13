@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Fly Fast",
+    "image": "flyfast.jpg",
+
+    "webpage": "https://fly-fast.vercel.app/",
+    "techstack": "Next.js, MongoDB, Tailwind"
+  },
+  {
+    "id": 2,
+    "title": "Guachi",
+    "image": "guachi.jpg",
+
+    "webpage": "https://guachi.info/",
+    "techstack": "Next.js, GoogleSheet, Tailwind"
+  },
+  {
+    "id": 3,
+    "title": "Wikitrekk",
+    "image": "wikitrekk.jpg",
+
+    "webpage": "https://wikitrekk.com/",
+    "techstack": "Next.js, MongoDB, Tailwind"
+  },
+  {
+    "id": 4,
+    "title": "Guia Islas Canarias",
+    "image": "guiacanarias.jpg",
+
+    "webpage": "https://guiaislascanarias.com/",
+    "techstack": "Wordpress"
+  }
+]
