@@ -29,7 +29,7 @@ const AboutPage = () => {
         <p className='mt-2 leading-relaxed font-bold text-lg'>
           Here are a few technologies I’ve been working with recently
         </p>
-        <div className={`flex gap-10 mt-5 ${FiraCode.className} `}>
+        <div className={`sm:flex gap-10 mt-5 ${FiraCode.className} `}>
           <ul className='tech-list'>
             <li>Javascript</li>
             <li>React</li>

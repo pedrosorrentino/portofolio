@@ -1,6 +1,6 @@
 import TitleLayout from '../TitleLayout'
 
-const WokrsPage = () => {
+const WorksPage = () => {
   return (
     <section id='works' className='mt-10'>
       <TitleLayout title={'Some Things I’ve Built'} />
@@ -14,4 +14,4 @@ const WokrsPage = () => {
   )
 }
 
-export default WokrsPage
+export default WorksPage
