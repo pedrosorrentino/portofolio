@@ -46,7 +46,9 @@ const Navbar = () => {
               key={item.name}
               className='hover:scale-110 hover:-translate-y-1 transition duration-300 ease-in-out'
             >
-              <Link href={item.url}>{item.icon}</Link>
+              <Link href={item.url} target='_blank' rel='noreferrer'>
+                {item.icon}
+              </Link>
             </li>
           ))}
         </ol>

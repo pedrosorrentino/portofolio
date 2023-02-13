@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import projects from '../lib/bdworks.json'
 import { FiraCode } from './Fonts'
 
@@ -11,7 +12,7 @@ const CardWorks = () => {
             key={item.id}
             className='grid items-center rounded-xl shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300'
           >
-            <a href={item.webpage} target='_blank' rel='noreferrer'>
+            <Link href={item.webpage} target='_blank' rel='noreferrer'>
               <Image
                 src={process.env.NEXT_PUBLIC_DOMAIN + '/project/' + item.image}
                 width={500}
@@ -29,7 +30,7 @@ const CardWorks = () => {
                   {item.techstack}
                 </p>
               </div>
-            </a>
+            </Link>
           </li>
         )
       })}
