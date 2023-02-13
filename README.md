@@ -1,6 +1,6 @@
 # Pedro Sorrentino Portfolio
 
-This repository contains my minimalist portfolio, created using Next.js, Tailwind CSS, and Framer Motion.
+This repository contains my minimalist portfolio, created using Next.js, Tailwind CSS, Markdown and Framer Motion.
 
 ## Features
 
