@@ -7,8 +7,11 @@ const CardWorks = () => {
     <ul className='grid sm:grid-cols-2 gap-10 mt-10'>
       {projects.map((item) => {
         return (
-          <li className='grid items-center rounded-xl shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300'>
-            <a key={item.id} href={item.webpage} target='_blank'>
+          <li
+            key={item.id}
+            className='grid items-center rounded-xl shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300'
+          >
+            <a href={item.webpage} target='_blank'>
               <Image
                 src={process.env.NEXT_PUBLIC_DOMAIN + '/project/' + item.image}
                 width={500}
