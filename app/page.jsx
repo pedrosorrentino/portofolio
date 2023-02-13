@@ -6,20 +6,18 @@ import ContactPage from '@/components/pages/ContactPage'
 import { FadeInSection } from '@/components/Animations'
 
 export const metadata = {
-  title: 'Full-Stack Developer Crafting Outstanding Digital Experiences',
+  title: 'Crafting Outstanding Digital Experiences',
   description:
     'Full-stack developer with a passion for crafting exceptional digital experiences. With a blend of development and design skills, he creates user-centered solutions that are unique and impactful. Discover more about Pedro approach to fullstack development.',
   openGraph: {
-    title:
-      'Pedro Sorrentino - Full-Stack Developer Crafting Outstanding Digital Experiences',
+    title: 'Pedro Sorrentino - Crafting Outstanding Digital Experiences',
     description:
       'Full-stack developer driven by a desire to craft outstanding digital experiences.',
-    url: 'https://miweb.com',
-    siteName:
-      'Pedro Sorrentino - Full-Stack Developer Crafting Outstanding Digital Experiences',
+    url: process.env.NEXT_PUBLIC_DOMAIN,
+    siteName: 'Pedro Sorrentino - Crafting Outstanding Digital Experiences',
     images: [
       {
-        url: 'https://miweb.com/og.jpg',
+        url: process.env.NEXT_PUBLIC_DOMAIN + '/og.jpg',
         width: 1920,
         height: 1080,
       },

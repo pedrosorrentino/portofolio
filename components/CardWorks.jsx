@@ -11,7 +11,7 @@ const CardWorks = () => {
             key={item.id}
             className='grid items-center rounded-xl shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300'
           >
-            <a href={item.webpage} target='_blank'>
+            <a href={item.webpage} target='_blank' rel='noreferrer'>
               <Image
                 src={process.env.NEXT_PUBLIC_DOMAIN + '/project/' + item.image}
                 width={500}
