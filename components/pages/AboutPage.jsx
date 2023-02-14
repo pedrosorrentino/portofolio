@@ -12,9 +12,9 @@ const AboutPage = () => {
       </p>
       <p className='mt-2 leading-relaxed'>
         My skills are impressive, especially in technologies such as HTML, CSS,
-        Tailwind, JavaScript (ES6+), TypeScript, MongoDB, MySQL, PostgreSQL,
-        React, Next.js, Node.js, and WordPress. I'm a quick learner and always
-        up for new challenges.
+        Tailwind, JavaScript, TypeScript, MongoDB, MySQL, PostgreSQL, React,
+        Next.js, Node.js, and WordPress. I'm a quick learner and always up for
+        new challenges.
       </p>
       <p className='mt-2 leading-relaxed'>
         Aside from being a great developer, I also have an exciting life outside
