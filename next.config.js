@@ -3,14 +3,14 @@ const { withContentlayer } = require('next-contentlayer')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx'],
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'netlify.app',
-      },
-    ],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: 'netlify.app',
+  //     },
+  //   ],
+  // },
   experimental: {
     appDir: true,
   },
