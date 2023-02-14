@@ -11,7 +11,7 @@ const ExperienceStep = () => {
       tabTitle: 'OrdepDev',
       date: 'December 2014 - Present',
       summary:
-        'As a freelance junior web developer, I have expertise in technologies such as HTML, CSS, JavaScript, React, and Next.js. I take pride in building and maintaining websites that are both visually appealing and user-friendly.',
+        'As a freelance web developer, I have expertise in technologies such as HTML, CSS, JavaScript, React, and Next.js. I take pride in building and maintaining websites that are both visually appealing and user-friendly.',
     },
     {
       id: 2,
