@@ -14,7 +14,7 @@ const CardWorks = () => {
           >
             <Link href={item.webpage} target='_blank' rel='noreferrer'>
               <Image
-                src={process.env.NEXT_PUBLIC_DOMAIN + '/project/' + item.image}
+                src={'/project/' + item.image}
                 width={500}
                 height={500}
                 alt={item.title}

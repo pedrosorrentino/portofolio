@@ -3,18 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const CardTemplate = (props) => {
-  const { title, publishedAt, summary, image } = props
+  const { title, summary, image } = props
 
   return (
     <article className='rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300'>
       <Link href={`blog/${props.slug}`}>
         <div className='relative flex items-end overflow-hidden rounded-xl'>
           <Image
-            src={
-              image !== undefined
-                ? process.env.NEXT_PUBLIC_DOMAIN + image
-                : `${process.env.NEXT_PUBLIC_DOMAIN}/og.jpg`
-            }
+            src={image !== undefined ? image : `/og.jpg`}
             width={500}
             height={500}
             alt={title}
