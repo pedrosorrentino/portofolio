@@ -4,7 +4,6 @@ const ContactPage = () => {
   return (
     <section id='contact'>
       <TitleLayout title={'Get In Touch'} />
-
       <p className='leading-relaxed'>
         I would love to hear from you! If you're interested in working together
         or just want to say hello, feel free to reach out...
