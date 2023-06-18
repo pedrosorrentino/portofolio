@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "qwik-project-name",
-  "short_name": "Welcome to Qwik",
+  "name": "pedro-sorrentino",
+  "short_name": "Pedro Sorrentino | Building the Future with TypeScript",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "A Qwik project app."
+  "description": "Welcome to my portfolio! I'm Pedro Sorrentino, a skilled TypeScript developer passionate about building robust and scalable applications. Explore my projects and witness the power of type safety and modern JavaScript concepts in action."
 }
