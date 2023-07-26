@@ -1,36 +1,36 @@
-import { component$ } from "@builder.io/qwik"
-import { Image } from "@unpic/qwik"
-import { frameworks } from "~/db/config"
-import { Button, ButtonContact } from "../Buttons"
-import { Title } from "../Titles"
+import { component$ } from '@builder.io/qwik'
+import { Image } from '@unpic/qwik'
+import { frameworks } from '~/db/config'
+import { Button, ButtonContact } from '../Buttons'
+import { Title } from '../Titles'
 
 export const About = component$(() => {
   return (
-    <article class="lg:w-[800px] animate__animated animate__fadeIn md:mx-10">
-      <div class="flex justify-center items-center gap-5 sm:gap-10 my-10">
+    <article class='lg:w-[800px] animate__animated animate__fadeIn md:mx-10'>
+      <div class='flex justify-center items-center gap-5 sm:gap-10 my-10'>
         <div>
-          <Title tag="h1" name="Pedro Sorrentino" center={false} />
-          <p class="text-sm sm:text-lg mt-2 font-mono">
-            Crafting{" "}
-            <span class="bg-slate-700 dark:bg-indigo-500 text-white p-1 rounded-lg">
+          <Title tag='h1' name='Pedro Sorrentino' center={false} />
+          <p class='text-sm sm:text-lg mt-2 font-mono'>
+            Crafting{' '}
+            <span class='bg-slate-700 dark:bg-indigo-500 text-white p-1 rounded-lg truncate leading-relaxed'>
               digital solutions
-            </span>{" "}
+            </span>{' '}
             to bring ideas to life.
           </p>
         </div>
         <Image
-          class="rounded-full bg-slate-800 dark:bg-slate-300 w-24 sm:w-auto"
-          src="/assets/pedrosorrentino.png"
+          class='rounded-full bg-slate-800 dark:bg-slate-300 w-24 sm:w-auto'
+          src='/assets/pedrosorrentino.png'
           width={120}
           height={120}
-          title="Pedro Sorrentino"
-          alt="TypeScript developer"
+          title='Pedro Sorrentino'
+          alt='TypeScript developer'
         />
       </div>
-      <div class="my-20">
+      <div class='my-20'>
         <p>
-          Hello! With over{" "}
-          <span class="font-bold">
+          Hello! With over{' '}
+          <span class='font-bold'>
             10 years of web development experience, specialize in JavaScript and
             TypeScript
           </span>
@@ -44,21 +44,21 @@ export const About = component$(() => {
           projects!
         </p>
       </div>
-      <div class="flex justify-center gap-10">
-        <Button name="Curriculum" url="curriculum-pedro-sorrentino.pdf" />
-        <ButtonContact name="Contact" url="mailto:elpelusashop@gmail.com" />
+      <div class='flex justify-center gap-10'>
+        <Button name='Curriculum' url='curriculum-pedro-sorrentino.pdf' />
+        <ButtonContact name='Contact' url='mailto:elpelusashop@gmail.com' />
       </div>
-      <div class="p-4 rounded-lg my-10">
+      <div class='p-4 rounded-lg my-10'>
         <Title
-          tag="h2"
-          name="Here are a few technologies I’ve been working with recently"
+          tag='h2'
+          name='Here are a few technologies I’ve been working with recently'
           center={true}
         />
 
-        <div class="flex flex-wrap justify-center items-center gap-5 mt-4">
+        <div class='flex flex-wrap justify-center items-center gap-5 mt-4'>
           {frameworks.map((i) => (
             <Image
-              class="transition-transform duration-300 transform-gpu hover:-translate-y-2 "
+              class='transition-transform duration-300 transform-gpu hover:-translate-y-2 '
               key={i.id}
               src={i.icon}
               width={60}
